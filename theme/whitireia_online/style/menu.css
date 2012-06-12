@@ -1,0 +1,141 @@
+/*overrides for custom menu. don't touch */
+/*YUI Reset */
+.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menu-content{ background-position: -10000px -10000px; border: none;
+	border-top: none;}
+
+.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menu-label{ background-position: -10000px -10000px; border: none;
+	border-top: none; }
+
+.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menu-label-active,.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menuitem-active .yui3-menuitem-content,.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menu-label-menuvisible{ background-position: -10000px -10000px; border: none;
+	border-top: none; }
+
+.yui3-skin-sam #page .yui3-menu-label,
+.yui3-skin-sam #page .yui3-menu .yui3-menu .yui3-menu-label { background-position: right center; border: none;
+	border-top: none;}
+
+.yui3-skin-sam #page .yui3-menubuttonnav .yui3-menu-label em { background-position: right center; border: none;
+	border-top: none;}
+
+.yui3-skin-sam #page .yui3-splitbuttonnav .yui3-menu-label .yui3-menu-toggle { background-position: 3px center;	border: none;
+	border-top: none; }
+
+.yui3-skin-sam #page .yui3-splitbuttonnav .yui3-menu-label-menuvisible .yui3-menu-toggle { background-position: 0% 50%; border: none;
+	border-top: none;}
+
+.yui3-skin-sam #page .yui3-menu-content, .yui3-skin-sam #page .yui3-menu .yui3-menu .yui3-menu-content, .yui3-skin-sam #page .yui3-menu ul.first-of-type, .yui3-skin-sam #page .yui3-menu-horizontal ul  {
+	border: none;
+	border-top: none;
+}
+
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label, .yui3-skin-sam .yui3-menu-horizontal .yui3-menuitem-content {
+	margin: 0px 0px;
+}
+
+/*end overrides for custom menu. don't touch */
+
+/* menu bar background */
+#menuwrap {
+	background: #2F2F2F url([[pix:theme|menugrad]]) repeat-x top left;
+	margin-top: 0px;
+	height: 42px;
+}
+
+#homeimg {
+	float: left;
+	
+	padding: 12px 16px;
+}
+
+#homeimg:hover {
+	background:#606060 url([[pix:theme|hovergrad]]) repeat-x top center !important;
+}
+
+#custommenu {
+	font-size: 13px;
+	font-weight: 600;
+	float: left;
+	clear:none !important;
+}
+
+#custommenu * {
+	border: none ;
+}
+
+/*bar menu item */
+.yui3-menu-content li a {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 42px;
+	cursor: pointer;
+	border: none !important;
+	color: #fff !important;
+}
+
+/*bar menu item hover background color */
+.yui3-menu-content li:hover, div.yui3-menu.custom_menu_submenu {
+	
+	background:#606060 url([[pix:theme|hovergrad]]) repeat-x top center !important;
+}
+
+div.yui3-menu.custom_menu_submenu div.yui3-menu.custom_menu_submenu {
+	background: none !important;
+	min-width: 100px;
+}
+
+/*submenu background color */
+div.yui3-menu.custom_menu_submenu div.yui3-menu-content {
+	background: #323232 !important;
+}
+
+div.yui3-menu.custom_menu_submenu div.yui3-menu-content {
+	min-width: 200px;
+	padding-bottom: 0 !important;
+}
+
+div.yui3-menu.custom_menu_submenu .yui3-menu-content li {
+	border-left: none;
+	background: none !important;
+}
+
+/*submenu link color and size */
+div.yui3-menu.custom_menu_submenu .yui3-menu-content li a {
+	font-size: 12px;
+	text-transform: none;
+	background: none !important;
+	text-decoration: none !important;
+	line-height: 30px !important;
+	border-bottom:1px solid #828282 !important;
+}
+
+/*submenu hover */
+div.yui3-menu.custom_menu_submenu .yui3-menu-content li a:hover, div.yui3-menu.custom_menu_submenu li a.yui3-menu-label:hover {
+	background-color: #fff !important;
+	color: #012E62 !important;
+}
+
+div.yui3-menu.custom_menu_submenu .yui3-menu-content li a {
+	background-image: url([[pix:theme|menuitem_submenuindicator_selected]]) !important;
+	background-repeat: no-repeat !important;
+	background-position: 100% 50% !important;
+}
+
+div.yui3-menu.custom_menu_submenu .yui3-menu-content li a:hover {
+	background-image: url([[pix:theme|menuitem_submenuindicator]]) !important;
+}
+
+div.yui3-menu.custom_menu_submenu .yui3-menu-content li.yui3-menuitem a {
+	background-image: none !important;
+}
+
+div.yui3-menu.custom_menu_submenu .yui3-menu-content li.yui3-menuitem a:hover {
+	background-image: none !important;
+}
+
+#datetime {
+	float: right;
+	color: #fff;
+	line-height: 42px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background:#606060 url([[pix:theme|hovergrad]]) repeat-x top center !important;
+}

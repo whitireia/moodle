@@ -1,0 +1,30 @@
+/* this file only used if the theme is two column only theme*/
+
+
+/* if side pre only theme, use the below
+
+.side-pre-only #page-content #region-main {
+    margin-left: 240px;
+}
+
+#page-content #region-pre {
+    width: 240px;
+}
+
+*/
+
+/* if side post only theme, use the below 
+
+.side-post-only #page-content #region-post {
+	 width: 240px;
+}
+
+.side-post-only #page-content #region-post-box {
+    margin-left: -240px;
+}
+
+.side-post-only #page-content #region-main {
+    margin-left: 240px;
+}
+
+*/

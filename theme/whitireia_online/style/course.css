@@ -1,0 +1,58 @@
+.path-course-view #region-main .region-content {
+	overflow: visible;
+}
+
+/** inside  of course **/
+ul.topics, ul.weeks {
+	margin: 0px;
+}
+
+.path-course-view .course-content li.section {
+    border: 0px solid #eee;
+    border-bottom: 1px dashed #666;
+}
+
+.path-course-view .course-content .side {
+    padding: 5px 0;
+}
+
+#page-course-view-weeks .weekdates {
+    font-size: 1em;
+    font-weight: normal;
+    color: #777;
+    padding: 2px;
+}
+
+.course-content .main {
+  background:transparent;
+  background-color: transparent;
+ }
+ 
+.course-content ul li.section, .course-content ul.topics li.section {
+      margin: 0px 0 0;
+      padding-top: 10px;
+}
+/*current topic hightlight */
+.course-content .current {
+	background: #eee;
+}
+
+.ie7 .course-content .current {
+	background: #eee;
+}
+.course-content .current .left.side {
+	color: #333;
+} 
+ 
+.course-content .main .content {
+    padding: 10px;
+    background:transparent;
+  background-color: transparent;
+}
+
+
+span.completionprogress {
+    font-size: 11px;
+    font-weight: 200;
+	padding-top: 10px;
+}

@@ -1,0 +1,84 @@
+.block {
+	border: 0px solid #ccc;
+}
+
+.block .header {
+	padding: 4px 10px;
+	padding-right: 5px;
+	background: #333;
+}
+
+.block_navigation.block .header {
+	background: #b2b728;
+}
+
+.block_site_main_menu.block .header {
+	background: #b5252c;
+}
+
+.block_login.block .header {
+	background: #08acad;
+}
+
+.block_activity_modules.block .header {
+	background: #2680b0;
+}
+
+.block_participants.block .header {
+	background: #999933;
+}
+
+.block_news_items.block .header {
+	background: #64ad7e;
+}
+
+.block .title {
+
+}
+
+/* block titles */
+.block .title h2 {
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #fff;
+}
+
+.block .content {
+	padding: 8px 10px;
+}
+
+/* remove background from html and course summary blocks */ 
+.block_course_summary, .block_course_summary .header, .block_course_summary .content, .block_html, .block_html .header, .block_html .content {
+	background: none;
+}
+
+/** some specific block styles for calendar block, login block, my profile block, etc. **/
+
+.block_calendar_month table.minicalendar.calendartable td,.block_calendar_month table.minicalendar.calendartable th {
+    border: none !important;
+}
+
+.block_calendar_month table.minicalendar {
+    margin-bottom: 0px !important;
+}
+
+.block_calendar_month table.minicalendar.calendartable th abbr {
+    border: none !important;
+    text-decoration: none;
+}
+
+.block_comments div.content li {
+    list-style-type: none;
+}
+
+.questionbankwindow.block {
+	padding: 0px;
+}
+
+.block_tree_box hr {
+	background: transparent;
+	border: none;
+	border-top: 1px solid #eee;
+}
