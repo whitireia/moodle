@@ -1763,7 +1763,7 @@ function print_section($course, $section, $mods, $modnamesused, $absolute=false,
             // see the activity itself, or for staff)
             if (!$mod->uservisible) {
                 echo '<div class="availabilityinfo">'.$mod->availableinfo.'</div>';
-            } else if ($canviewhidden && !empty($CFG->enableavailability)) {
+            } else if ($canviewhidden && !empty($CFG->enableavailability) && $mod->visible) {
                 $ci = new condition_info($mod);
                 $fullinfo = $ci->get_full_information();
                 if($fullinfo) {
@@ -2075,6 +2075,11 @@ function get_course_category_tree($id = 0, $depth = 0) {
     if ($depth > 0) {
         // This is a recursive call so return the required array
         return array($categories, $categoryids);
+    }
+
+    if (empty($categoryids)) {
+        // No categories available (probably all hidden).
+        return array();
     }
 
     // The depth is 0 this function has just been called so we can finish it off

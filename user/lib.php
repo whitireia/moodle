@@ -40,7 +40,7 @@ function user_create_user($user) {
     }
 
     //check username
-    if ($user->username !== textlib::strtolower($user->username)) {
+    if ($user->username !== textlib_get_instance()->strtolower($user->username)) {
         throw new moodle_exception('usernamelowercase');
     } else {
         if ($user->username !== clean_param($user->username, PARAM_USERNAME)) {
@@ -91,7 +91,7 @@ function user_update_user($user) {
 
     //check username
     if (isset($user->username)) {
-        if ($user->username !== textlib::strtolower($user->username)) {
+        if ($user->username !== textlib_get_instance()->strtolower($user->username)) {
             throw new moodle_exception('usernamelowercase');
         } else {
             if ($user->username !== clean_param($user->username, PARAM_USERNAME)) {
@@ -309,7 +309,8 @@ function user_get_user_details($user, $course = null) {
         }
     }
 
-    if ($currentuser
+    if ($isadmin
+      of $currentuser
       or $canviewuseremail  // this is a capability in course context, it will be false in usercontext
       or $user->maildisplay == 1
       or ($user->maildisplay == 2 and enrol_sharing_course($user, $USER))) {
