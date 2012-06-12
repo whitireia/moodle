@@ -5322,7 +5322,7 @@ function get_max_upload_sizes($sitebytes=0, $coursebytes=0, $modulebytes=0) {
     $filesize[intval($maxsize)] = display_size($maxsize);
 
     $sizelist = array(10240, 51200, 102400, 512000, 1048576, 2097152,
-                      5242880, 10485760, 20971520, 52428800, 104857600);
+                      5242880, 10485760, 20971520, 52428800, 104857600, 2147483648);
 
     // Allow maxbytes to be selected if it falls outside the above boundaries
     if (isset($CFG->maxbytes) && !in_array(get_real_size($CFG->maxbytes), $sizelist)) {
